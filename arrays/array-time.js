@@ -6,4 +6,4 @@ const time = ['Petter', 'Mariah']
 
 // indeices      0        1
 
-9 console.log(time[1])
+ console.log(time[1])
