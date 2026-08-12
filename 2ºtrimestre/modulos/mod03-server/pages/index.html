@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage Obrigado pela visita</title>
 </head>
@@ -9,5 +6,242 @@
     <h3>Página Inicial</h3>
     <p>Olá, você está em casa!</p>  
     <a href="/sobre">Ir para Sobre</a>   
+    <!DOCTYPE html>
+ <html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrash Metal Band | Página Inicial</title>
+    
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Orbitron:wght@600;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-dark: #070707;
+            --bg-card: rgba(18, 18, 18, 0.9);
+            --red-primary: #e60000;
+            --red-glow: rgba(230, 0, 0, 0.5);
+            --text-light: #f5f5f5;
+            --text-muted: #aaaaaa;
+            --border-color: rgba(230, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* Padrão geométrico de fundo via Base64 SVG */
+            background-image: 
+                radial-gradient(circle at center, rgba(230, 0, 0, 0.12) 0%, transparent 70%),
+                url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0wIDBoNDB2MUgwem0wIDM5aDQwdjFIMHoiIGZpbGw9InJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMikiLz48L3N2Zz4=");
+            background-attachment: fixed;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(180deg, #000000 0%, rgba(10, 10, 10, 0.9) 100%);
+            border-bottom: 2px solid var(--red-primary);
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 25px var(--red-glow);
+            backdrop-filter: blur(10px);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand i {
+            color: var(--red-primary);
+            font-size: 2rem;
+            filter: drop-shadow(0 0 8px var(--red-primary));
+        }
+
+        .brand-title {
+            font-family: 'Metal Mania', cursive;
+            font-size: 2.2rem;
+            color: #ffffff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px var(--red-glow);
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 0.6rem 1.2rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            border-color: var(--red-primary);
+            box-shadow: 0 0 15px var(--red-glow);
+            background: var(--red-primary);
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .hero-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--red-primary);
+            border-radius: 8px;
+            padding: 2.5rem;
+            max-width: 680px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(8px);
+        }
+
+        /* Banner ilustrativo em Base64 SVG */
+        .banner-img {
+            width: 100%;
+            height: auto;
+            max-height: 220px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero-card h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .hero-card p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #e60000 0%, #800000 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.9rem 2.2rem;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px var(--red-glow);
+            transition: all 0.3s ease;
+        }
+
+        .btn-action:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(230, 0, 0, 0.8);
+            background: linear-gradient(135deg, #ff1a1a 0%, #a00000 100%);
+        }
+
+        footer {
+            background-color: #000000;
+            text-align: center;
+            padding: 1.2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hero-card {
+                padding: 1.5rem;
+            }
+            .hero-card h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <i class="fa-solid fa-guitar"></i>
+            <h1 class="brand-title">Thrash Reign</h1>
+        </div>
+        <nav>
+            <a href="/sobre">
+                <i class="fa-solid fa-users"></i> Ir para Sobre
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-card">
+            <!-- Imagem Vetorial Base64 de Alta Performance no tema Heavy/Thrash Metal -->
+            <img class="banner-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMwNTA1MDUiLz48ZyBmaWxsPSJub25lIjoic3Ryb2tlPSIjZTYwMDAwIiBzdHJva2Utd2lkdGg9IjIiIG9wYWNpdHk9IjAuNSI+PHBhdGggZD0iTTAgMjAwTDQwMCAwTDgwMCAyMDBMNDAwIDQwMFoiLz48cGF0aCBkPSJNMTAwIDIwMEw0MDAgNTBMNzAwIDIwMEw0MDAgMzUwWiIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MDAsIDE4MCkiPjxwYXRoIGQ9Ik0tNjAgLTgwIEw0MCAtMTEwIEw2MCAtODAgTDQwIDAgTDcwIDgwIEwwIDYwIExLTjAgODAgTDAgLTQwWiIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjZTYwMDAwIiBzdHJva2Utd2lkdGg9IjQiLz48Y2lyY2xlIGN4PSIwIiBjeT0iLTMwIiByPSIyNSIgZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSIjZTYwMDAwIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNLTIwIDYwIEwwIDExMCBMMjAgNjAiIHN0cm9rZT0iI2U2MDAwMCIgc3Ryb2tlLXdpZHRoPSI2Ii8+PC9nPjx0ZXh0IHg9IjQwMCIgeT0iMzUwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNlNjAwMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSI4Ij5IRUFWWSBNSVRBTCBBVFRBQ0s8L3RleHQ+PC9zdmc+" alt="Thrash Metal Banner">
+
+            <h3><i class="fa-solid fa-skull"></i> Página Inicial</h3>
+            <p>Olá, você está em casa! O som pesado, os riffs velozes e a energia do Thrash Metal comandam este espaço.</p>
+            
+            <a href="/sobre" class="btn-action">
+                <i class="fa-solid fa-bolt"></i> Ir para Sobre
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <i class="fa-solid fa-copyright"></i> 2026 Thrash Reign. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
