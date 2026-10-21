@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lendas da Guitarra - A História dos Instrumentos Icônicos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Navegação -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="11 19 2 12 11 5 11 19"></polygon>
+                    <polygon points="22 19 13 12 22 5 22 19"></polygon>
+                </svg>
+                <span>LEGENDARY GUITARS</span>
+            </a>
+            <nav class="nav-links">
+    <a href="#historia">A Revolução</a>
+    <a href="#modelos">Modelos Icônicos</a>
+    <a href="#comparador">Comparador</a>
+    <a href="/sobre">Sobre</a>
+    <a href="/servicos">Serviços</a>
+    <a href="/contato">Contato</a>
+    <a href="/produtos">Produtos</a>
+</nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <span class="badge">A Origem do Som</span>
+            <h1>A Evolução do Instrumento que Mudou o Mundo</h1>
+            <p>Descubra a história, a arte e a engenharia por trás das guitarras que moldaram gerações e definiram a música moderna.</p>
+            <div class="hero-buttons">
+                <a href="#modelos" class="btn btn-primary">Explorar Coleção</a>
+                <a href="#comparador" class="btn btn-outline">Comparar Modelos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Linha do Tempo -->
+    <section id="historia" class="section timeline-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Linha do Tempo e Evolução</h2>
+                <p>Como a necessidade de mais volume nos palcos criou o instrumento definitivo do século XX.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">1931</div>
+                    <div class="timeline-card">
+                        <h3>A Rickenbacker "Frying Pan"</h3>
+                        <p>Desenvolvida por George Beauchamp e Adolph Rickenbacker, foi a primeira guitarra elétrica de corpo maciço, feita de alumínio cast.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1950</div>
+                    <div class="timeline-card">
+                        <h3>Fender Telecaster</h3>
+                        <p>Leo Fender revoluciona o mercado com a Telecaster: a primeira guitarra de corpo sólido produzida em massa com braço parafusado.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1952</div>
+                    <div class="timeline-card">
+                        <h3>Gibson Les Paul</h3>
+                        <p>Resposta da Gibson à Fender, unindo o requinte de madeiras nobres à inovação dos captadores humbuckers para eliminar ruídos.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1954</div>
+                    <div class="timeline-card">
+                        <h3>Fender Stratocaster</h3>
+                        <p>O design anatômico com duplo cutaway e a ponte tremolo redefiniram para sempre o conforto e a expressividade musical.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1958</div>
+                    <div class="timeline-card">
+                        <h3>Flying V & Explorer</h3>
+                        <p>A Gibson lança modelos com ângulos arrojados à frente do seu tempo, tornando-se ícones do Rock e Heavy Metal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Modelos (Layout mantido inteiramente via HTML/CSS) -->
+    <section id="modelos" class="section models-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Modelos Lendários</h2>
+                <p>Explore as especificações e a história dos modelos que marcaram a história da guitarra.</p>
+            </div>
+
+            <div class="guitar-grid">
+                
+                <!-- Card 1: Gibson Les Paul -->
+                <div class="guitar-card">
+                    <div class="guitar-card-header">
+                        <span class="guitar-brand">Gibson (1952)</span>
+                        <h3>Gibson Les Paul</h3>
+                        <p>Famosa pelo seu sustenido lendário, som encorpado e visual luxuoso. A arma de escolha dos ícones do rock.</p>
+                    </div>
+                    <div class="guitar-card-actions">
+                        <!-- Trigger para Modal CSS -->
+                        <label for="modal-lespaul" class="btn btn-primary btn-block">Ver Detalhes</label>
+                    </div>
+                </div>
+
+                <!-- Card 2: Fender Stratocaster -->
+                <div class="guitar-card">
+                    <div class="guitar-card-header">
+                        <span class="guitar-brand">Fender (1954)</span>
+                        <h3>Fender Stratocaster</h3>
+                        <p>O design de guitarra mais reconhecível do mundo. Oferece clareza cristalina e versatilidade sem igual.</p>
+                    </div>
+                    <div class="guitar-card-actions">
+                        <label for="modal-stratocaster" class="btn btn-primary btn-block">Ver Detalhes</label>
+                    </div>
+                </div>
+
+                <!-- Card 3: Fender Telecaster -->
+                <div class="guitar-card">
+                    <div class="guitar-card-header">
+                        <span class="guitar-brand">Fender (1950)</span>
+                        <h3>Fender Telecaster</h3>
+                        <p>Conhecida pelo seu estalo característico (twang), construção simples e ergonomia indestrutível.</p>
+                    </div>
+                    <div class="guitar-card-actions">
+                        <label for="modal-telecaster" class="btn btn-primary btn-block">Ver Detalhes</label>
+                    </div>
+                </div>
+
+                <!-- Card 4: Gibson Flying V -->
+                <div class="guitar-card">
+                    <div class="guitar-card-header">
+                        <span class="guitar-brand">Gibson (1958)</span>
+                        <h3>Gibson Flying V</h3>
+                        <p>Com linhas futuristas e agressivas, tornou-se um dos maiores símbolos visuais do Heavy Metal.</p>
+                    </div>
+                    <div class="guitar-card-actions">
+                        <label for="modal-flyingv" class="btn btn-primary btn-block">Ver Detalhes</label>
+                    </div>
+                </div>
+
+                <!-- Card 5: Gibson Explorer -->
+                <div class="guitar-card">
+                    <div class="guitar-card-header">
+                        <span class="guitar-brand">Gibson (1958)</span>
+                        <h3>Gibson Explorer</h3>
+                        <p>Formas angulares marcantes e afiadas com tom encorpado e grande acesso aos trastes agudos.</p>
+                    </div>
+                    <div class="guitar-card-actions">
+                        <label for="modal-explorer" class="btn btn-primary btn-block">Ver Detalhes</label>
+                    </div>
+                </div>
+
+                <!-- Card 6: B.C. Rich Warlock -->
+                <div class="guitar-card">
+                    <div class="guitar-card-header">
+                        <span class="guitar-brand">B.C. Rich (1981)</span>
+                        <h3>B.C. Rich Warlock</h3>
+                        <p>Design pontiagudo e extremo, focado em alta saída, afinações baixas e riffs agressivos.</p>
+                    </div>
+                    <div class="guitar-card-actions">
+                        <label for="modal-warlock" class="btn btn-primary btn-block">Ver Detalhes</label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparador Estático de Guitarras -->
+    <section id="comparador" class="section compare-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Comparador de Modelos</h2>
+                <p>Análise comparativa das características dos dois pilares da guitarra elétrica.</p>
+            </div>
+
+            <div class="compare-grid">
+                <div class="compare-card">
+                    <h3>Gibson Les Paul</h3>
+                    <div class="compare-row"><div class="compare-row-title">Ano de Lançamento</div><div>1952</div></div>
+                    <div class="compare-row"><div class="compare-row-title">Madeira do Corpo</div><div>Mogno com Tampo em Maple</div></div>
+                    <div class="compare-row"><div class="compare-row-title">Captadores</div><div>Humbuckers (PAF)</div></div>
+                    <div class="compare-row"><div class="compare-row-title">Estilo Predominante</div><div>Classic Rock / Blues / Hard Rock</div></div>
+                    <div class="compare-row"><div class="compare-row-title">Guitarristas Notáveis</div><div>Jimmy Page, Slash, Gary Moore</div></div>
+                </div>
+
+                <div class="compare-card">
+                    <h3>Fender Stratocaster</h3>
+                    <div class="compare-row"><div class="compare-row-title">Ano de Lançamento</div><div>1954</div></div>
+                    <div class="compare-row"><div class="compare-row-title">Madeira do Corpo</div><div>Alder / Ash</div></div>
+                    <div class="compare-row"><div class="compare-row-title">Captadores</div><div>Single-Coils (3x)</div></div>
+                    <div class="compare-row"><div class="compare-row-title">Estilo Predominante</div><div>Blues / Rock / Pop / Funk</div></div>
+                    <div class="compare-row"><div class="compare-row-title">Guitarristas Notáveis</div><div>Jimi Hendrix, David Gilmour, Eric Clapton</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal CSS Puro: Gibson Les Paul -->
+    <input type="checkbox" id="modal-lespaul" class="modal-state">
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <label for="modal-lespaul" class="modal-close">&times;</label>
+            <span class="badge">Gibson</span>
+            <h2 class="modal-title">Gibson Les Paul</h2>
+            <p class="modal-subtitle">Lançamento: 1952</p>
+            <div class="modal-section">
+                <h4>História</h4>
+                <p>Criada em 1952 em parceria com o famoso guitarrista e inventor Les Paul. Tornou-se o pilar do som pesado nos anos 60 e 70 graças à eliminação de ruídos proporcionada pelos captadores humbuckers.</p>
+            </div>
+            <div class="modal-section">
+                <h4>Especificações</h4>
+                <ul>
+                    <li><strong>Corpo:</strong> Mogno com Tampo em Maple</li>
+                    <li><strong>Captadores:</strong> Humbuckers (PAF)</li>
+                    <li><strong>Estilos:</strong> Classic Rock / Blues / Hard Rock</li>
+                </ul>
+            </div>
+            <div class="modal-section">
+                <h4>Mestres do Modelo</h4>
+                <p class="highlight-text">Jimmy Page, Slash, Gary Moore</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal CSS Puro: Fender Stratocaster -->
+    <input type="checkbox" id="modal-stratocaster" class="modal-state">
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <label for="modal-stratocaster" class="modal-close">&times;</label>
+            <span class="badge">Fender</span>
+            <h2 class="modal-title">Fender Stratocaster</h2>
+            <p class="modal-subtitle">Lançamento: 1954</p>
+            <div class="modal-section">
+                <h4>História</h4>
+                <p>Lançada em 1954 por Leo Fender, introduziu contornos anatômicos no corpo, três captadores e o lendário sistema de ponte tremolo, redefinindo o instrumento.</p>
+            </div>
+            <div class="modal-section">
+                <h4>Especificações</h4>
+                <ul>
+                    <li><strong>Corpo:</strong> Alder / Ash</li>
+                    <li><strong>Captadores:</strong> Single-Coils (3x)</li>
+                    <li><strong>Estilos:</strong> Blues / Rock / Pop / Funk</li>
+                </ul>
+            </div>
+            <div class="modal-section">
+                <h4>Mestres do Modelo</h4>
+                <p class="highlight-text">Jimi Hendrix, David Gilmour, Eric Clapton</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal CSS Puro: Fender Telecaster -->
+    <input type="checkbox" id="modal-telecaster" class="modal-state">
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <label for="modal-telecaster" class="modal-close">&times;</label>
+            <span class="badge">Fender</span>
+            <h2 class="modal-title">Fender Telecaster</h2>
+            <p class="modal-subtitle">Lançamento: 1950</p>
+            <div class="modal-section">
+                <h4>História</h4>
+                <p>A primeira guitarra elétrica de corpo sólido comercializada em larga escala no mundo, conhecida por sua simplicidade, resistência e timbre limpo estalado.</p>
+            </div>
+            <div class="modal-section">
+                <h4>Especificações</h4>
+                <ul>
+                    <li><strong>Corpo:</strong> Ash / Alder</li>
+                    <li><strong>Captadores:</strong> Single-Coils (2x)</li>
+                    <li><strong>Estilos:</strong> Country / Rock / Indie</li>
+                </ul>
+            </div>
+            <div class="modal-section">
+                <h4>Mestres do Modelo</h4>
+                <p class="highlight-text">Keith Richards, Muddy Waters, Bruce Springsteen</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal CSS Puro: Gibson Flying V -->
+    <input type="checkbox" id="modal-flyingv" class="modal-state">
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <label for="modal-flyingv" class="modal-close">&times;</label>
+            <span class="badge">Gibson</span>
+            <h2 class="modal-title">Gibson Flying V</h2>
+            <p class="modal-subtitle">Lançamento: 1958</p>
+            <div class="modal-section">
+                <h4>História</h4>
+                <p>Lançada em 1958 na linha futurista da Gibson para revolucionar a imagem da marca. Tornou-se um ícone essencial nos palcos do Rock e Heavy Metal.</p>
+            </div>
+            <div class="modal-section">
+                <h4>Especificações</h4>
+                <ul>
+                    <li><strong>Corpo:</strong> Korina / Mogno</li>
+                    <li><strong>Captadores:</strong> Humbuckers</li>
+                    <li><strong>Estilos:</strong> Heavy Metal / Hard Rock</li>
+                </ul>
+            </div>
+            <div class="modal-section">
+                <h4>Mestres do Modelo</h4>
+                <p class="highlight-text">Albert King, James Hetfield, Randy Rhoads</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal CSS Puro: Gibson Explorer -->
+    <input type="checkbox" id="modal-explorer" class="modal-state">
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <label for="modal-explorer" class="modal-close">&times;</label>
+            <span class="badge">Gibson</span>
+            <h2 class="modal-title">Gibson Explorer</h2>
+            <p class="modal-subtitle">Lançamento: 1958</p>
+            <div class="modal-section">
+                <h4>História</h4>
+                <p>Desenhada junto com a Flying V, trazia bordas radiais futuristas, oferecendo perfeito equilíbrio para tocar em pé e excelente sustain de notas.</p>
+            </div>
+            <div class="modal-section">
+                <h4>Especificações</h4>
+                <ul>
+                    <li><strong>Corpo:</strong> Korina / Mogno</li>
+                    <li><strong>Captadores:</strong> Humbuckers</li>
+                    <li><strong>Estilos:</strong> Hard Rock / Thrash Metal</li>
+                </ul>
+            </div>
+            <div class="modal-section">
+                <h4>Mestres do Modelo</h4>
+                <p class="highlight-text">The Edge, James Hetfield, Matthias Jabs</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal CSS Puro: B.C. Rich Warlock -->
+    <input type="checkbox" id="modal-warlock" class="modal-state">
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <label for="modal-warlock" class="modal-close">&times;</label>
+            <span class="badge">B.C. Rich</span>
+            <h2 class="modal-title">B.C. Rich Warlock</h2>
+            <p class="modal-subtitle">Lançamento: 1981</p>
+            <div class="modal-section">
+                <h4>História</h4>
+                <p>Desenhada por Bernardo Chavez Rico em 1981, uniu visual agressivo à ergonomia necessária para tocar vertiginosos solos e riffs de metal pesado.</p>
+            </div>
+            <div class="modal-section">
+                <h4>Especificações</h4>
+                <ul>
+                    <li><strong>Corpo:</strong> Mogno</li>
+                    <li><strong>Captadores:</strong> Humbuckers Ativos</li>
+                    <li><strong>Estilos:</strong> Extreme Metal / Shred</li>
+                </ul>
+            </div>
+            <div class="modal-section">
+                <h4>Mestres do Modelo</h4>
+                <p class="highlight-text">Kerry King, Mick Thomson, Chuck Schuldiner</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>LEGENDARY GUITARS</h3>
+                <p>Um tributo à engenharia, arte e paixão por trás dos instrumentos mais emblemáticos da história da música.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Legendary Guitars. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
